@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<button class="icon"><i class="fa fa-calculator"></i></button>
+<div class="container">
+	<div class="history">
+		<input type="button" value="-" class="MFClose" id="minimize"><input type="button" value="D" class="MFClose" id="fullscreen"><input type="button" value="&times" class="MFClose" id="close">
+	</div>
+	<div class="Ans">
+		<input type="text" name="" id="query">
+		<p id="ans"></p>
+	</div>
+	<div class="button">
+		<div class="subButton"><Button onClick="queryUpdate('AC')">AC</Button><Button onClick="queryUpdate('X')"><div style="display: inline-block;border: 1px solid black;width: 15px;height: 15px;border-top-left-radius: 50%;border-bottom-left-radius: 50%;">&times</div></Button><Button onClick="queryUpdate('%')"><i class="fas fa-percentage"></i></Button><Button onClick="queryUpdate('/')"><i class="fas fa-divide"></i></Button></div>
+		<div class="subButton"><Button onClick="queryUpdate(7)">7</Button><Button onClick="queryUpdate(8)">8</Button><Button onClick="queryUpdate(9)">9</Button><Button onClick="queryUpdate('*')">x</Button></div>
+		<div class="subButton"><Button onClick="queryUpdate(4)">4</Button><Button onClick="queryUpdate(5)">5</Button><Button onClick="queryUpdate(6)">6</Button><Button onClick="queryUpdate('-')"><i class="fas fa-minus"></i></Button></div>
+		<div class="subButton"><Button onClick="queryUpdate(1)">1</Button><Button onClick="queryUpdate(2)">2</Button><Button onClick="queryUpdate(3)">3</Button><Button onClick="queryUpdate('+')"><i class="fas fa-plus"></i></Button></div>
+		<div class="subButton"><Button onClick="queryUpdate('')">s</Button><Button onClick="queryUpdate(0)">0</Button><Button onClick="queryUpdate('.')">.</Button><Button onClick="solveQuery()"><i class="fas fa-equals"></i></Button></div>
+	</div>
+</div>
+<script type="text/javascript" src="calculator.js">
+	
+</script>
+</body>
+</html>
